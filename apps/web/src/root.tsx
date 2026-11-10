@@ -18,7 +18,7 @@ import { normalizedPathname } from '@/lib/canonical-url';
 import { HorizonsPreviewScripts } from './horizons-preview-scripts';
 import { LanguageProvider } from '@/lib/i18n';
 
-const ICON_VERSION = '5';
+const ICON_VERSION = '6';
 
 export const links: Route.LinksFunction = () => [
 	{ rel: 'stylesheet', href: stylesheet, precedence: 'default' },
