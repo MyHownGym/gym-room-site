@@ -55,7 +55,7 @@ export function SiteHeader() {
 		<header className="site-header">
 			<div className="header-inner">
 				<a className="brand" href="/" aria-label="Gym Room — accueil">
-					<img src="https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/symbole_gym_room-ngwRD.png" alt="" />
+					<img src="/images/logo-gr-blanc.png" alt="" />
 					<span>GYM ROOM<small>VERSOIX</small></span>
 				</a>
 				<nav className="desktop-nav" aria-label={tr('Navigation principale', 'Main navigation')}>
