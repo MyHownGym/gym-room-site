@@ -573,3 +573,9 @@ body.page-gym-lab .lang-switch{--sw-grad:linear-gradient(110deg,#541a00 0%,#a032
  body.page-gym-lab .site-header .mobile-nav [aria-current="page"]{color:#c24100 !important}
  body.page-gym-lab .site-header .mobile-nav .lang-switch{background:linear-gradient(110deg,#541a00 0%,#a03200 55%,#d6580a 100%) !important}
 }
+
+/* --- Brighter, more vivid menu gradients --- */
+.site-header .header-inner{background:linear-gradient(110deg,#0050ad 0%,#0a6fd6 55%,#2f9bf2 100%) !important;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(0,0,0,.12),0 14px 34px rgba(10,111,214,.32) !important}
+body.page-gym-lab .site-header .header-inner{background:linear-gradient(110deg,#c43a00 0%,#f25a0d 55%,#ff8a3d 100%) !important;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(0,0,0,.12),0 14px 34px rgba(242,90,13,.32) !important}
+.lang-switch,.site-header .mobile-nav .lang-switch{background:linear-gradient(110deg,#0050ad 0%,#0a6fd6 55%,#2f9bf2 100%) !important;--sw-ink:#0a6fd6}
+body.page-gym-lab .lang-switch,body.page-gym-lab .site-header .mobile-nav .lang-switch{background:linear-gradient(110deg,#c43a00 0%,#f25a0d 55%,#ff8a3d 100%) !important;--sw-ink:#e24b00}
