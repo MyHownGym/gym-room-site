@@ -5,7 +5,7 @@ export function Hero() {
 	return (
 		<section className="rail hero-wrap">
 			<div className="hero">
-				<img className="hero-image" src="https://images.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/f7e8636e-8e7e-4511-961f-fa16826d977f.png" alt="Gym Room studio privé à Versoix" />
+				<img className="hero-image" src="/images/studio-hex.webp" alt="Gym Room studio privé à Versoix" />
 				<div className="hero-shade" />
 				<div className="hero-content">
 					<div className="tags">

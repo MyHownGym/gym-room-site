@@ -8,7 +8,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
 	return seo({ matches, location }, {
 		title: 'Studio — l’espace Gym Room à Versoix',
 		description: 'Découvre l’espace entièrement privatisable de Gym Room : vestiaire, zone cardio et salle de force, Avenue Choiseul 19a à Versoix.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-kH3mh.jpeg',
+		image: '/images/studio-hex.webp',
 	});
 }
 
@@ -16,7 +16,7 @@ export default function StudioPage() {
 	const { tr } = useLang();
 	const zones = [
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3276-2-0tAf5.jpeg',
+			image: '/images/studio-entree.webp',
 			title: tr('vestiaire', 'changing room'),
 			text: tr(
 				'Un petit espace pour se changer et préparer sa tenue de sport, avec des douches communes à disposition.',
@@ -24,12 +24,12 @@ export default function StudioPage() {
 			),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3272-2-exN9M.jpeg',
+			image: '/images/studio-cardio.webp',
 			title: tr('zone cardio', 'cardio zone'),
 			text: tr('Vélo, rameur et tapis de course pour l’échauffement et le travail cardio.', 'Bike, rower and treadmill for warm-up and cardio work.'),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-krEAL.jpeg',
+			image: '/images/studio-hex.webp',
 			title: tr('salle de force', 'strength room'),
 			text: tr(
 				'20m² d’espace privatif avec du matériel de qualité pour les séances de musculation. Chaussures d’intérieur obligatoires.',
@@ -47,7 +47,7 @@ export default function StudioPage() {
 					'Découvre l’espace entièrement privatisable où se déroulent les séances de coaching et de location à Versoix.',
 					'Discover the fully privatisable space where coaching and rental sessions take place in Versoix.',
 				)}
-				image="https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-kH3mh.jpeg"
+				image="/images/studio-hex.webp"
 			/>
 			<Reveal direction="left">
 			<section className="rail page-section">

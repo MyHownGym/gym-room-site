@@ -10,13 +10,13 @@ export type Advantage = {
 const FR: Advantage[] = [
 	{
 		title: 'coaching',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/a7404320-nyqyP.jpg',
+		image: '/images/titouan-williams.webp',
 		path: 'coaching#coaching',
 		text: 'Un coach diplômé universitaire (BSc en sciences du sport) : anatomie, physiologie, biomécanique et psychologie du sport font partie du cursus suivi.',
 	},
 	{
 		title: 'location coach',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1366-2-2pFZo.jpeg',
+		image: '/images/coaching-studio.webp',
 		path: 'location-coach',
 		text: 'Un studio privé et bien équipé, à louer pour les coachs indépendants qui veulent un cadre premium pour leurs clients.',
 	},
@@ -37,13 +37,13 @@ const FR: Advantage[] = [
 const EN: Advantage[] = [
 	{
 		title: 'coaching',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/a7404320-nyqyP.jpg',
+		image: '/images/titouan-williams.webp',
 		path: 'coaching#coaching',
 		text: 'A university-educated coach (BSc in sport science): anatomy, physiology, biomechanics and sport psychology are all part of the curriculum.',
 	},
 	{
 		title: 'studio rental',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1366-2-2pFZo.jpeg',
+		image: '/images/coaching-studio.webp',
 		path: 'location-coach',
 		text: 'A private, well-equipped studio to rent for independent coaches who want a premium setting for their clients.',
 	},

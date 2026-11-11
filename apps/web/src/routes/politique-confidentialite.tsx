@@ -7,7 +7,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
 	return seo({ matches, location }, {
 		title: 'Politique de confidentialité | Gym Room',
 		description: 'Politique de confidentialité et de protection des données du site gym-room.ch.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-kH3mh.jpeg',
+		image: '/images/studio-hex.webp',
 	});
 }
 

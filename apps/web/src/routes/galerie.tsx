@@ -5,16 +5,16 @@ import { PageHero } from '@/components/shared/page-hero';
 import { Reveal } from '@/components/shared/reveal';
 
 const images = [
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3276-2-tpZDy.jpeg', alt: 'Gym Room Versoix' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1366-2-vp0eN.jpeg', alt: 'Studio Gym Room, vue intérieure' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1297-2-L4HHz.jpeg', alt: 'Espace fitness' },
+	{ src: '/images/studio-entree.webp', alt: 'Gym Room Versoix' },
+	{ src: '/images/coaching-studio.webp', alt: 'Studio Gym Room, vue intérieure' },
+	{ src: '/images/halteres.webp', alt: 'Espace fitness' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1064-GZ9ay.jpeg', alt: 'Gym Lab, testing en action' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3272-2-V00Rq.jpeg', alt: 'Équipements du studio' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3204-2-mj3Mc.jpeg', alt: 'Gym Lab, testing sportif' },
+	{ src: '/images/studio-cardio.webp', alt: 'Équipements du studio' },
+	{ src: '/images/studio-nuit.webp', alt: 'Gym Lab, testing sportif' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1052-uOd0W.jpeg', alt: 'Titouan Williams, coach' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_2167-i40Lg.jpeg', alt: 'Studio Gym Room, espace force' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/79e5a7cc-be78-4907-a17c-8dc7501358f2-IX0mb.JPG', alt: 'Coaching en cours' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-qCDT0.jpeg', alt: 'Gym Lab, mesures de performance' },
+	{ src: '/images/studio-hex.webp', alt: 'Gym Lab, mesures de performance' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/4366e81b-4b6c-40e6-abd5-0ca4190a44ce-YZQvE.JPG', alt: 'Studio Gym Room' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/993da7a0-be98-46ee-b4d6-da8f15814226-KIkS9.JPG', alt: 'Vue d’ensemble du studio' },
 ];

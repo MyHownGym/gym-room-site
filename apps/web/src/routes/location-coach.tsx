@@ -9,7 +9,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
 	return seo({ matches, location }, {
 		title: 'Location coach — studio privé à louer à Versoix | Gym Room',
 		description: 'Un studio privé et bien équipé à Versoix, à louer pour les coachs indépendants qui veulent un cadre premium pour leurs clients. Réservez en pack.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-op66p.jpeg',
+		image: '/images/studio-hex.webp',
 	});
 }
 
@@ -17,22 +17,22 @@ export default function LocationCoachPage() {
 	const { tr } = useLang();
 	const features = [
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3272-2-exN9M.jpeg',
+			image: '/images/studio-cardio.webp',
 			title: tr('espace privé', 'private space'),
 			text: tr('Pendant ton créneau, le studio n’est qu’à toi et tes clients : pas d’autres membres en même temps.', 'During your slot, the studio is only yours and your clients’: no other members at the same time.'),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-krEAL.jpeg',
+			image: '/images/studio-hex.webp',
 			title: tr('matériel de qualité', 'quality equipment'),
 			text: tr('Une salle de force 20m² avec du matériel de musculation et de cardio pour des séances complètes.', 'A 20m² strength room with strength and cardio equipment for complete sessions.'),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3276-2-0tAf5.jpeg',
+			image: '/images/studio-entree.webp',
 			title: tr('vestiaire & douches', 'changing room & showers'),
 			text: tr('Un petit espace pour se changer, avec des douches communes à disposition.', 'A small space to change, with shared showers available.'),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_3204-2-f2Dgr.jpeg',
+			image: '/images/studio-nuit.webp',
 			title: tr('sur rendez-vous', 'by appointment'),
 			text: tr('Le studio s’ouvre sur réservation, 24/7, à l’horaire qui t’arrange.', 'The studio opens by booking, 24/7, at the time that suits you.'),
 		},
@@ -47,7 +47,7 @@ export default function LocationCoachPage() {
 					'À Versoix, un studio privé à louer pour les coachs indépendants qui veulent un cadre premium pour leurs clients. Réservation simple, espace calme, matériel dispo.',
 					'In Versoix, a private studio to rent for independent coaches who want a premium setting for their clients. Simple booking, calm space, equipment available.',
 				)}
-				image="https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-op66p.jpeg"
+				image="/images/studio-hex.webp"
 				motto={tr('« le fitness, en mieux. » — t. williams', '“fitness, but better.” — t. williams')}
 			/>
 

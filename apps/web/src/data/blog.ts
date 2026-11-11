@@ -18,7 +18,7 @@ const FR: BlogPost[] = [
 		title: 'le fitness est dangereux',
 		excerpt:
 			'À en croire certains médias, le fitness serait dangereux pour la santé. L’article défend l’idée inverse : la musculation est une base utile, à condition d’être pratiquée sainement et encadrée.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_7197-unS4m.JPG',
+		image: '/images/souleve-de-terre.webp',
 		date: '2025-07-16',
 		dateLabel: '16 juillet 2025',
 		readTime: '5 min',
@@ -57,8 +57,8 @@ const FR: BlogPost[] = [
 		title: 'le physique des réseaux',
 		excerpt:
 			'Les réseaux sociaux montrent des physiques impressionnants, mais l’image, la génétique et parfois le dopage faussent souvent la comparaison. L’article invite à choisir des modèles réalistes.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1366-2-wvoTw.jpeg',
-		coverImage: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_7197-ZRD8w.JPG',
+		image: '/images/coaching-studio.webp',
+		coverImage: '/images/souleve-de-terre.webp',
 		date: '2025-05-12',
 		dateLabel: '12 mai 2025',
 		readTime: '5 min',
@@ -100,7 +100,7 @@ const EN: BlogPost[] = [
 		title: 'fitness is dangerous',
 		excerpt:
 			'According to some media, fitness is dangerous for your health. This article argues the opposite: strength training is a useful foundation, provided it is practised healthily and supervised.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_7197-unS4m.JPG',
+		image: '/images/souleve-de-terre.webp',
 		date: '2025-07-16',
 		dateLabel: '16 July 2025',
 		readTime: '5 min',
@@ -139,8 +139,8 @@ const EN: BlogPost[] = [
 		title: 'social media physiques',
 		excerpt:
 			'Social media shows impressive physiques, but image, genetics and sometimes doping often distort the comparison. The article invites you to choose realistic role models.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1366-2-wvoTw.jpeg',
-		coverImage: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_7197-ZRD8w.JPG',
+		image: '/images/coaching-studio.webp',
+		coverImage: '/images/souleve-de-terre.webp',
 		date: '2025-05-12',
 		dateLabel: '12 May 2025',
 		readTime: '5 min',

@@ -10,7 +10,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
 	return seo({ matches, location }, {
 		title: 'FAQ — questions fréquentes | Gym Room',
 		description: 'Retrouve les réponses aux questions les plus courantes sur les services, la réservation, les horaires et les conditions chez Gym Room.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_5486-kH3mh.jpeg',
+		image: '/images/studio-hex.webp',
 		jsonLd: {
 			'@context': 'https://schema.org',
 			'@type': 'FAQPage',

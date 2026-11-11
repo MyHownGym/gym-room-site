@@ -40,7 +40,7 @@ export default function CoachingPage() {
 			<section className="rail page-section founder-section" id="coaching">
 				<div className="founder-top">
 					<div className="founder-image">
-						<img loading="lazy" src="https://images.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/9e2e3e99-669d-409c-9eb3-a416ad8c54b0.png" alt={tr('Titouan Williams, fondateur et coach', 'Titouan Williams, founder and coach')} />
+						<img loading="lazy" src="/images/titouan-williams.webp" alt={tr('Titouan Williams, fondateur et coach', 'Titouan Williams, founder and coach')} />
 					</div>
 					<div className="founder-body">
 						<p className="eyebrow">{tr('présentation', 'about')}</p>
