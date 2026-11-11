@@ -4,13 +4,13 @@ import { useLang } from '@/lib/i18n';
 
 const credentials = [
 	{
-		src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_6599-pehrT.jpeg',
+		src: '/images/diplome-unil.webp',
 		alt: { fr: 'Bachelor', en: 'Bachelor' },
 		title: { fr: 'bachelor', en: 'bachelor' },
 		text: { fr: 'en sciences du sport', en: 'in sport science' },
 	},
 	{
-		src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_6598-WvD6M.jpeg',
+		src: '/images/diplome-swiss-athletics.webp',
 		alt: { fr: 'Entraîneur B', en: 'Coach B' },
 		title: { fr: 'entraîneur b', en: 'coach b' },
 		text: { fr: 'swiss athletics', en: 'swiss athletics' },

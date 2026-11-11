@@ -85,7 +85,7 @@ export default function CoachingPage() {
 				</div>
 				<div className="programme-section programme-3col">
 				<div className="programme-image">
-					<img loading="lazy" src="https://images.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/2c59ca46-11b2-4622-94b0-6d1b0e4ddd41.png" alt={tr('Téléphone tenu en main affichant le programme d’entraînement personnalisé dans Ekklo', 'Hand holding a phone showing the personalised workout programme in Ekklo')} />
+					<img loading="lazy" src="/images/app-ekklo.webp" alt={tr('Téléphone tenu en main affichant le programme d’entraînement personnalisé dans Ekklo', 'Hand holding a phone showing the personalised workout programme in Ekklo')} />
 				</div>
 				<div className="programme-body">
 					<p className="eyebrow">{tr('le principe', 'the idea')}</p>
