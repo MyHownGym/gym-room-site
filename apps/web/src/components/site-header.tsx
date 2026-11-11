@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Mail, Instagram, MessageCircle, Menu, X } from 'lucide-react';
 import { useLang } from '@/lib/i18n';
+import { useSlidingPill, pillCss } from '@/hooks/use-sliding-pill';
 
 type NavChild = { label: string; href: string };
 type NavItem = { label: string; href?: string; children?: NavChild[] };
@@ -12,7 +13,11 @@ export function SiteHeader() {
 	const [expanded, setExpanded] = useState<string | null>(null);
 	const [mounted, setMounted] = useState(false);
 
-	useEffect(() => setMounted(true), []);
+	const [path, setPath] = useState<string | null>(null);
+	useEffect(() => {
+		setMounted(true);
+		setPath(window.location.pathname.replace(/\/+$/, '') || '/');
+	}, []);
 
 	const nav: NavItem[] = [
 		{ label: tr('Accueil', 'Home'), href: '/' },
@@ -38,18 +43,27 @@ export function SiteHeader() {
 		},
 	];
 
+	const isActive = (href?: string) => !!href && !!path && (href === '/' ? path === '/' : path === href || path.startsWith(`${href}/`));
+	const activeItem = nav.find(item => isActive(item.href) || item.children?.some(child => isActive(child.href.split('#')[0])));
+	const activeKey = activeItem?.label ?? null;
+	const desktopPill = useSlidingPill<HTMLElement>(activeKey, [lang]);
+	const mobilePill = useSlidingPill<HTMLElement>(activeKey, [open, expanded, lang]);
+
 	const langSwitch = (
-		<div className="lang-segmented" role="group" aria-label={tr('Changer de langue', 'Switch language')}>
-			<button type="button" className={lang === 'fr' ? 'is-active' : ''} onClick={() => setLang('fr')} aria-pressed={lang === 'fr'}>FR</button>
-			<button type="button" className={lang === 'en' ? 'is-active' : ''} onClick={() => setLang('en')} aria-pressed={lang === 'en'}>EN</button>
-		</div>
+		<button
+			type="button"
+			role="switch"
+			className={`lang-switch${lang === 'en' ? ' is-en' : ''}`}
+			aria-checked={lang === 'en'}
+			aria-label={tr('Langue : passer en anglais', 'Language: switch to French')}
+			onClick={() => setLang(lang === 'fr' ? 'en' : 'fr')}
+		>
+			<span className="lang-switch-knob" aria-hidden="true" />
+			<span className={`lang-switch-label${lang === 'fr' ? ' is-on' : ''}`}>FR</span>
+			<span className={`lang-switch-label${lang === 'en' ? ' is-on' : ''}`}>EN</span>
+		</button>
 	);
-	const menuLangSwitch = (
-		<div className="lang-segmented" role="group" aria-label={tr('Changer de langue', 'Switch language')}>
-			<button type="button" className={lang === 'fr' ? 'is-active' : ''} onClick={() => setLang('fr')} aria-pressed={lang === 'fr'}>FR</button>
-			<button type="button" className={lang === 'en' ? 'is-active' : ''} onClick={() => setLang('en')} aria-pressed={lang === 'en'}>EN</button>
-		</div>
-	);
+	const menuLangSwitch = langSwitch;
 
 	return (
 		<header className="site-header">
@@ -58,11 +72,12 @@ export function SiteHeader() {
 					<img src="/images/logo-gr-blanc.png" alt="" />
 					<span>GYM ROOM<small>VERSOIX</small></span>
 				</a>
-				<nav className="desktop-nav" aria-label={tr('Navigation principale', 'Main navigation')}>
+				<nav className="desktop-nav" aria-label={tr('Navigation principale', 'Main navigation')} ref={desktopPill.containerRef} onMouseLeave={desktopPill.clearHover}>
+					<span className="nav-pill" aria-hidden="true" style={pillCss(desktopPill.style)} />
 					{nav.map(item =>
 						item.children ? (
 							<div className="nav-dropdown-trigger" key={item.label}>
-								<span className="nav-trigger">
+								<span className="nav-trigger" {...desktopPill.bind(item.label)}>
 									{item.href ? <a href={item.href}>{item.label}</a> : <button type="button">{item.label}</button>} <b>+</b>
 								</span>
 								<div className="nav-dropdown">
@@ -72,7 +87,7 @@ export function SiteHeader() {
 								</div>
 							</div>
 						) : (
-							<a key={item.href} href={item.href}>{item.label}</a>
+							<a key={item.href} href={item.href} aria-current={activeKey === item.label ? 'page' : undefined} {...desktopPill.bind(item.label)}>{item.label}</a>
 						),
 					)}
 				</nav>
@@ -88,13 +103,15 @@ export function SiteHeader() {
 				</button>
 			</div>
 			{open && (
-				<nav className="mobile-nav" aria-label={tr('Navigation mobile', 'Mobile navigation')}>
+				<nav className="mobile-nav" aria-label={tr('Navigation mobile', 'Mobile navigation')} ref={mobilePill.containerRef} onMouseLeave={mobilePill.clearHover}>
+					<span className="nav-pill" aria-hidden="true" style={pillCss(mobilePill.style)} />
 					{nav.map(item =>
 						item.children ? (
 							<div className="mobile-group" key={item.label}>
 								<button
 									type="button"
 									className="mobile-group-trigger"
+									{...mobilePill.bind(item.label)}
 									aria-expanded={expanded === item.label}
 									onClick={() => setExpanded(expanded === item.label ? null : item.label)}
 								>
@@ -114,7 +131,7 @@ export function SiteHeader() {
 								)}
 							</div>
 						) : (
-							<a key={item.href} href={item.href} onClick={() => setOpen(false)}>{item.label}</a>
+							<a key={item.href} href={item.href} onClick={() => setOpen(false)} aria-current={activeKey === item.label ? 'page' : undefined} {...mobilePill.bind(item.label)}>{item.label}</a>
 						),
 					)}
 					<a className="mobile-instagram-link" href="https://www.instagram.com/gym_room.ch/" target="_blank" rel="noreferrer" aria-label="Instagram Gym Room">

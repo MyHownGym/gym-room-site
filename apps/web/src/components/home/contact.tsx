@@ -20,7 +20,7 @@ export function Contact() {
 					'The path should stay direct. If you want to test, book or ask for details, it all starts here.',
 				)}</p>
 				<ul>
-					<li><Check size={16} /><span><a href="/location-coach">{tr('Location de studio', 'Studio rental')}</a> {tr('et coaching privé', 'and private coaching')}</span></li>
+					<li><Check size={16} /><span><a href="/location-coach">{tr('Location de studio', 'Studio rental')}</a> {tr('et', 'and')} <a href="/coaching">{tr('coaching privé', 'private coaching')}</a></span></li>
 					<li><Check size={16} />{tr('Paiement en ligne ou sur place', 'Online or on-site payment')}</li>
 					<li><Check size={16} />{tr('Annulation flexible jusqu’à 24h avant', 'Flexible cancellation up to 24h before')}</li>
 				</ul>
