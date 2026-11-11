@@ -18,7 +18,7 @@ export default function GymLabPage() {
 	const { tr } = useLang();
 	const devices = [
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/photo-2026-09-03-09-13-15-nOWHP.jpg',
+			image: '/images/gym-lab-sprint.webp',
 			tag: tr('capteur de vitesse', 'speed sensor'),
 			title: 'k-power',
 			text: tr(
@@ -27,7 +27,7 @@ export default function GymLabPage() {
 			),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_2288-2-1-BkOoA.jpeg',
+			image: '/images/gym-lab-plateformes.webp',
 			tag: tr('plateforme de force', 'force plate'),
 			title: 'k-deltas',
 			text: tr(
@@ -36,7 +36,7 @@ export default function GymLabPage() {
 			),
 		},
 		{
-			image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_2492-1-S4YEa.jpeg',
+			image: '/images/gym-lab-capteur.webp',
 			tag: tr('dynamomètre de traction', 'pull dynamometer'),
 			title: 'k-pull',
 			text: tr(
@@ -81,7 +81,7 @@ export default function GymLabPage() {
 					'Trois appareils de mesure de précision pour tester ta force, ta vitesse et ton explosivité. Les chiffres ne mentent pas.',
 					'Three precision measurement devices to test your strength, speed and explosiveness. Numbers do not lie.',
 				)}
-				image="https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_2492-1-sKLU0.jpeg"
+				image="/images/gym-lab-capteur.webp"
 			/>
 			<Reveal direction="up">
 			<div className="lab-motto-box"><span className="lab-motto-text">test · train · repeat</span></div>

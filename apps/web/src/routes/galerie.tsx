@@ -13,10 +13,10 @@ const images = [
 	{ src: '/images/studio-nuit.webp', alt: 'Gym Lab, testing sportif' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1052-uOd0W.jpeg', alt: 'Titouan Williams, coach' },
 	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_2167-i40Lg.jpeg', alt: 'Studio Gym Room, espace force' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/79e5a7cc-be78-4907-a17c-8dc7501358f2-IX0mb.JPG', alt: 'Coaching en cours' },
+	{ src: '/images/rack-logo.webp', alt: 'Coaching en cours' },
 	{ src: '/images/studio-hex.webp', alt: 'Gym Lab, mesures de performance' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/4366e81b-4b6c-40e6-abd5-0ca4190a44ce-YZQvE.JPG', alt: 'Studio Gym Room' },
-	{ src: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/993da7a0-be98-46ee-b4d6-da8f15814226-KIkS9.JPG', alt: 'Vue d’ensemble du studio' },
+	{ src: '/images/halteres-rack.webp', alt: 'Studio Gym Room' },
+	{ src: '/images/poignee-logo.webp', alt: 'Vue d’ensemble du studio' },
 ];
 
 export function meta({ matches, location }: Route.MetaArgs) {

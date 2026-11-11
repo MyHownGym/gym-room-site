@@ -7,7 +7,7 @@ export function GymLab() {
 		<section className="rail lab-section">
 			<div className="lab-image">
 				<img
-					src="https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/photo-2026-09-03-09-13-15-0Caiu.jpg"
+					src="/images/gym-lab-sprint.webp"
 					alt={tr('La cellule testing de Gym Room', 'The Gym Room testing cell')}
 				/>
 			</div>

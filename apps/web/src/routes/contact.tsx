@@ -9,7 +9,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
 	return seo({ matches, location }, {
 		title: 'Contact & réservation | Gym Room Versoix',
 		description: 'Une question, une demande de précision ou envie de réserver ? Remplis le formulaire ou contacte Gym Room directement par WhatsApp.',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1237-4zlrD.jpeg',
+		image: '/images/numero-19a.webp',
 	});
 }
 
@@ -24,7 +24,7 @@ export default function ContactPage() {
 					'Une question, une demande de précision ou envie de réserver ? Remplis le formulaire ou contacte-nous directement par WhatsApp.',
 					'A question, a request for details or want to book? Fill in the form or contact us directly on WhatsApp.',
 				)}
-				image="https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/img_1237-4zlrD.jpeg"
+				image="/images/numero-19a.webp"
 			/>
 			<Reveal direction="left">
 			<section className="rail page-section contact-layout">

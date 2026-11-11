@@ -28,7 +28,7 @@ const FR: Advantage[] = [
 	},
 	{
 		title: 'gym lab',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/photo-2026-09-03-09-13-15-5ZtIN.jpg',
+		image: '/images/gym-lab-sprint.webp',
 		path: 'gym-lab',
 		text: 'Des appareils de mesure précis pour se tester et s’entraîner avec précision.',
 	},
@@ -55,7 +55,7 @@ const EN: Advantage[] = [
 	},
 	{
 		title: 'gym lab',
-		image: 'https://horizons-cdn.hostinger.com/af62100b-b93b-4c2b-9c77-bbd7225fee8d/photo-2026-09-03-09-13-15-5ZtIN.jpg',
+		image: '/images/gym-lab-sprint.webp',
 		path: 'gym-lab',
 		text: 'Precise measurement devices to test yourself and train with accuracy.',
 	},
