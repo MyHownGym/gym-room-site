@@ -37,8 +37,8 @@ export default function LegalPage() {
 					<div className="legal-block">
 						<h2>{tr('2. hébergement', '2. hosting')}</h2>
 						<p>{tr(
-							'Le site est hébergé par Hostinger International Ltd., dont le siège social se situe à Kaunas, Lituanie. Les serveurs assurant l’accès au site sont exploités par Hostinger.',
-							'The site is hosted by Hostinger International Ltd., whose registered office is located in Kaunas, Lithuania. The servers providing access to the site are operated by Hostinger.',
+							'Le site est hébergé par Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, États-Unis (www.cloudflare.com), via son service Cloudflare Pages. Le site est distribué depuis le réseau de serveurs de Cloudflare, dont des centres de données en Europe.',
+							'The site is hosted by Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, United States (www.cloudflare.com), through its Cloudflare Pages service. The site is served from Cloudflare’s server network, including data centres in Europe.',
 						)}</p>
 					</div>
 					<div className="legal-block">
