@@ -6,9 +6,15 @@ export function GymLab() {
 	return (
 		<section className="rail lab-section">
 			<div className="lab-image">
-				<img
-					src="/images/gym-lab-sprint.webp"
-					alt={tr('La cellule testing de Gym Room', 'The Gym Room testing cell')}
+				<video
+					src="/images/gym-lab.mp4"
+					poster="/images/gym-lab-poster.webp"
+					autoPlay
+					muted
+					loop
+					playsInline
+					preload="metadata"
+					aria-label={tr('Vidéo de la cellule testing Gym Lab', 'Video of the Gym Lab testing cell')}
 				/>
 			</div>
 			<div className="lab-panel">
