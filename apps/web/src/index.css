@@ -602,3 +602,20 @@ body.page-gym-lab .cookie-banner-text a{color:#e24b00}
 .footer-cookie-link{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer}
 .footer-cookie-link:hover{text-decoration:underline;text-underline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* --- Sober menu: flat brand blue, no glossy "magnifier" pill --- */
+.site-header .header-inner{background:linear-gradient(100deg,#00509a 0%,#005caa 60%,#0868b8 100%) !important;box-shadow:0 10px 26px rgba(0,60,120,.18) !important;border:1px solid rgba(255,255,255,.12) !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important}
+body.page-gym-lab .site-header .header-inner{background:linear-gradient(100deg,#c2440a 0%,#d4520f 60%,#e05e16 100%) !important;box-shadow:0 10px 26px rgba(160,60,0,.18) !important}
+.site-header .nav-pill{background:rgba(255,255,255,.14) !important;border:0 !important;box-shadow:none !important;-webkit-backdrop-filter:none !important;backdrop-filter:none !important;transition:transform .3s ease,width .3s ease,height .3s ease,opacity .2s ease !important}
+.site-header .desktop-nav a,.site-header .desktop-nav .nav-trigger{transform:none !important}
+.lang-switch,.site-header .mobile-nav .lang-switch{background:rgba(255,255,255,.14) !important;border:1px solid rgba(255,255,255,.22) !important;box-shadow:none !important;--sw-ink:#005caa}
+.site-header .mobile-nav .lang-switch{background:#005caa !important}
+body.page-gym-lab .lang-switch{--sw-ink:#c94a0c}
+body.page-gym-lab .site-header .mobile-nav .lang-switch{background:#d4520f !important}
+.lang-switch-knob{background:#fff !important;box-shadow:0 1px 3px rgba(0,0,0,.18) !important;transition:transform .3s ease !important}
+.site-header .header-actions a[aria-label],.site-header .header-actions .icon-button{box-shadow:none !important}
+@media (max-width:900px){
+ .site-header .header-inner{background:linear-gradient(100deg,#00509a 0%,#005caa 60%,#0868b8 100%) !important}
+ body.page-gym-lab .site-header .header-inner{background:linear-gradient(100deg,#c2440a 0%,#d4520f 60%,#e05e16 100%) !important}
+}
+body.page-gym-lab .site-header .header-inner .lang-switch{background:rgba(255,255,255,.14) !important;border:1px solid rgba(255,255,255,.22) !important;box-shadow:none !important}
