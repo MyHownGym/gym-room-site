@@ -1,3 +1,4 @@
+import { openCookiePreferences } from '@/lib/cookie-consent';
 import { ArrowRight } from 'lucide-react';
 import { useLang } from '@/lib/i18n';
 
@@ -49,6 +50,7 @@ export function SiteFooter() {
 				<div>
 					<a href="/mentions-legales">{tr('Mentions légales', 'Legal notice')}</a>
 					<a href="/politique-confidentialite">{tr('Politique de confidentialité', 'Privacy policy')}</a>
+					<button type="button" className="footer-cookie-link" onClick={() => openCookiePreferences()}>{tr('Paramètres des cookies', 'Cookie settings')}</button>
 				</div>
 			</div>
 		</footer>

@@ -48,6 +48,13 @@ export default function PrivacyPage() {
 					)}</p>
 				</div>
 				<div className="legal-block">
+					<h2>{tr('cookies et mesure d’audience', 'cookies and analytics')}</h2>
+					<p>{tr(
+						'Le site utilise des cookies nécessaires à son fonctionnement (par exemple pour mémoriser votre choix de cookies). Avec votre accord uniquement, il utilise Google Analytics (Google Ireland Ltd.) pour mesurer la fréquentation : pages vues, provenance des visites, type d’appareil et pays. Ces données sont agrégées et servent à améliorer le site. Sans votre accord, aucun cookie de mesure n’est déposé. Vous pouvez modifier votre choix à tout moment via « Paramètres des cookies » en bas de chaque page. Votre choix est conservé 6 mois.',
+						'The site uses cookies required for it to work (for example to remember your cookie choice). Only with your consent, it uses Google Analytics (Google Ireland Ltd.) to measure traffic: page views, traffic sources, device type and country. This data is aggregated and used to improve the site. Without your consent, no analytics cookie is set. You can change your choice at any time via “Cookie settings” at the bottom of every page. Your choice is kept for 6 months.',
+					)}</p>
+				</div>
+				<div className="legal-block">
 					<h2>{tr('vos droits', 'your rights')}</h2>
 					<p>{tr(
 						'Conformément à la loi suisse sur la protection des données (nLPD) et au RGPD, vous disposez d’un droit d’accès, de rectification et de suppression de vos données. Pour l’exercer, écrivez à info@gym-room.ch.',

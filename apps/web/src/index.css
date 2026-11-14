@@ -579,3 +579,26 @@ body.page-gym-lab .lang-switch{--sw-grad:linear-gradient(110deg,#541a00 0%,#a032
 body.page-gym-lab .site-header .header-inner{background:linear-gradient(110deg,#c43a00 0%,#f25a0d 55%,#ff8a3d 100%) !important;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -1px 0 rgba(0,0,0,.12),0 14px 34px rgba(242,90,13,.32) !important}
 .lang-switch,.site-header .mobile-nav .lang-switch{background:linear-gradient(110deg,#0050ad 0%,#0a6fd6 55%,#2f9bf2 100%) !important;--sw-ink:#0a6fd6}
 body.page-gym-lab .lang-switch,body.page-gym-lab .site-header .mobile-nav .lang-switch{background:linear-gradient(110deg,#c43a00 0%,#f25a0d 55%,#ff8a3d 100%) !important;--sw-ink:#e24b00}
+
+/* --- Cookie banner --- */
+.cookie-banner{position:fixed;left:16px;right:16px;bottom:96px;z-index:80;margin:0 auto;max-width:520px;padding:18px;border-radius:22px;background:#fff;color:#0b2540;border:1px solid #dbe6f1;box-shadow:0 18px 44px rgba(3,26,54,.22);font-size:14px;line-height:1.5}
+.cookie-banner-title{margin:0;font-weight:700;font-size:15px}
+.cookie-banner-text{margin:4px 0 0;color:rgba(11,37,64,.78)}
+.cookie-banner-text a{color:#0a6fd6;text-decoration:underline;text-underline-offset:2px}
+.cookie-banner-options{margin:12px 0 0;padding:0;border:0;display:grid;gap:8px}
+.cookie-banner-option{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:14px;background:#f1f6fb;cursor:pointer}
+.cookie-banner-option input{margin-top:3px;width:16px;height:16px;accent-color:#0a6fd6}
+.cookie-banner-option strong{display:block;font-size:14px}
+.cookie-banner-option small{display:block;font-size:12px;color:rgba(11,37,64,.7)}
+.cookie-banner-actions{margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cookie-btn{min-height:44px;border-radius:999px;padding:0 12px;font:inherit;font-weight:600;cursor:pointer}
+.cookie-btn-outline{background:#fff;border:1px solid #0b2540;color:#0b2540}
+.cookie-btn-outline:hover{background:#0b2540;color:#fff}
+.cookie-btn-soft{background:#f1f6fb;border:1px solid rgba(11,37,64,.12);color:#0b2540}
+.cookie-btn-primary{border:0;color:#fff;background:linear-gradient(110deg,#0050ad 0%,#0a6fd6 55%,#2f9bf2 100%)}
+body.page-gym-lab .cookie-btn-primary{background:linear-gradient(110deg,#c43a00 0%,#f25a0d 55%,#ff8a3d 100%)}
+body.page-gym-lab .cookie-banner-text a{color:#e24b00}
+@media (max-width:480px){.cookie-banner-actions{grid-template-columns:1fr 1fr}.cookie-btn-primary{grid-column:1/-1}}
+.footer-cookie-link{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer}
+.footer-cookie-link:hover{text-decoration:underline;text-underline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

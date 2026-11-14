@@ -12,6 +12,7 @@ import type { Route } from './+types/root';
 import stylesheet from '@/index.css?url';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { CookieBanner } from '@/components/cookie-banner';
 import { BackToTop } from '@/components/back-to-top';
 import { canonicalOrigin } from '@/lib/canonical-origin.server';
 import { normalizedPathname } from '@/lib/canonical-url';
@@ -137,6 +138,7 @@ export default function App() {
 			<SiteHeader />
 			<Outlet />
 			<SiteFooter />
+			<CookieBanner />
 			<BackToTop />
 		</LanguageProvider>
 	);
