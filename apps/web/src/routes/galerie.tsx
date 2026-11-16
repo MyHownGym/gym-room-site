@@ -5,18 +5,18 @@ import { PageHero } from '@/components/shared/page-hero';
 import { Reveal } from '@/components/shared/reveal';
 
 const images = [
-	{ src: '/images/studio-entree.webp', alt: 'Gym Room Versoix' },
-	{ src: '/images/coaching-studio.webp', alt: 'Studio Gym Room, vue intérieure' },
-	{ src: '/images/halteres.webp', alt: 'Espace fitness' },
-	{ src: '/images/disque-melsfit.webp', alt: 'Gym Lab, testing en action' },
-	{ src: '/images/studio-cardio.webp', alt: 'Équipements du studio' },
-	{ src: '/images/studio-nuit.webp', alt: 'Gym Lab, testing sportif' },
-	{ src: '/images/pile-de-poids.webp', alt: 'Titouan Williams, coach' },
-	{ src: '/images/facade-gym-room.webp', alt: 'Studio Gym Room, espace force' },
-	{ src: '/images/rack-logo.webp', alt: 'Coaching en cours' },
-	{ src: '/images/studio-hex.webp', alt: 'Gym Lab, mesures de performance' },
-	{ src: '/images/halteres-rack.webp', alt: 'Studio Gym Room' },
-	{ src: '/images/poignee-logo.webp', alt: 'Vue d’ensemble du studio' },
+	{ src: '/images/studio-entree.webp', alt: 'Entrée de Gym Room avec le logo lumineux' },
+	{ src: '/images/coaching-studio.webp', alt: 'Séance au studio devant le logo Gym Room' },
+	{ src: '/images/halteres.webp', alt: 'Haltère réglable au studio' },
+	{ src: '/images/galerie-materiel.webp', alt: 'Serviette brodée Gym Room' },
+	{ src: '/images/studio-cardio.webp', alt: 'Espace cardio du studio' },
+	{ src: '/images/studio-nuit.webp', alt: 'Le studio en lumière bleue' },
+	{ src: '/images/pile-de-poids.webp', alt: 'Pile de poids de la machine guidée' },
+	{ src: '/images/facade-gym-room.webp', alt: 'Façade de Gym Room à Versoix' },
+	{ src: '/images/rack-logo.webp', alt: 'Logo Gym Room sur le rack' },
+	{ src: '/images/studio-hex.webp', alt: 'Le studio et ses lumières hexagonales' },
+	{ src: '/images/halteres-rack.webp', alt: 'Haltères réglables sur leur support Gym Room' },
+	{ src: '/images/poignee-logo.webp', alt: 'Poignée avec plaque Gym Room' },
 ];
 
 export function meta({ matches, location }: Route.MetaArgs) {
