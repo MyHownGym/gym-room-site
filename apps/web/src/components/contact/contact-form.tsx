@@ -7,7 +7,7 @@ import { useLang } from '@/lib/i18n';
  * inbox it was created for). While empty, the form falls back to opening the
  * visitor's mail app.
  */
-const WEB3FORMS_ACCESS_KEY = '';
+const WEB3FORMS_ACCESS_KEY = 'f691b995-040e-4604-9612-60f3af7fd5d6';
 
 type Status = 'idle' | 'sending' | 'sent' | 'mailto' | 'error';
 
