@@ -620,3 +620,6 @@ body.page-gym-lab .site-header .mobile-nav .lang-switch{background:#d4520f !impo
 }
 body.page-gym-lab .site-header .header-inner .lang-switch{background:rgba(255,255,255,.14) !important;border:1px solid rgba(255,255,255,.22) !important;box-shadow:none !important}
 @media (min-width:901px){.galerie-tile img{height:auto !important;aspect-ratio:1/1}}
+.form-error{margin:0;padding:10px 14px;border-radius:12px;background:#fdecec;color:#8a1c1c;font-size:14px}
+.form-error-link{background:none;border:0;padding:0;font:inherit;font-weight:700;color:inherit;text-decoration:underline;cursor:pointer}
+.form-submit[disabled]{opacity:.7;cursor:wait}
