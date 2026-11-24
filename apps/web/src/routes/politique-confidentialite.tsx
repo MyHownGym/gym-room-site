@@ -29,8 +29,8 @@ export default function PrivacyPage() {
 				<div className="legal-block">
 					<h2>{tr('données collectées', 'data collected')}</h2>
 					<p>{tr(
-						'Lors d’une prise de contact via le formulaire, nous collectons votre nom, votre email, votre téléphone et le contenu de votre message. Lors d’une réservation, les données nécessaires à la gestion du rendez-vous sont traitées par le système Setmore.',
-						'When you contact us via the form, we collect your name, email, phone and the content of your message. When booking, the data needed to manage the appointment is processed by the Setmore system.',
+						'Lors d’une prise de contact via le formulaire, nous collectons votre nom, votre email, votre téléphone, le service choisi et le contenu de votre message. Ces données sont transmises par email via le service Web3Forms, qui les achemine jusqu’à notre boîte de réception sans les utiliser à d’autres fins. Lors d’une réservation, les données nécessaires à la gestion du rendez-vous sont traitées par le système Setmore.',
+						'When you contact us via the form, we collect your name, email, phone, the chosen service and the content of your message. This data is sent by email through the Web3Forms service, which delivers it to our inbox without using it for any other purpose. When booking, the data needed to manage the appointment is processed by the Setmore system.',
 					)}</p>
 				</div>
 				<div className="legal-block">
