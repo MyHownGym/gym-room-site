@@ -642,3 +642,18 @@ body.page-gym-lab .site-header .header-inner .lang-switch{background:rgba(255,25
  .rail.page-section.cta-band{margin-left:24px !important;margin-right:24px !important}
 }
 .theme-orange .pricing-card.featured li:before,.pricing-card.featured li:before,.offer-card.featured li:before{background:none !important}
+
+/* --- Get the app (Ekklo) --- */
+.get-app-float{position:fixed;left:24px;bottom:24px;z-index:35;display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 18px 0 6px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#0b2540;font:inherit;font-size:14px;font-weight:700;box-shadow:0 10px 24px #1538431f;cursor:pointer;transition:background-color .2s}
+.get-app-float:hover{background:#f1f6fb}
+.get-app-logo{display:flex;width:36px;height:36px;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(110deg,#00509a,#0868b8)}
+body.page-gym-lab .get-app-logo{background:linear-gradient(110deg,#c2440a,#e05e16)}
+.get-app-logo img{width:22px;height:22px;object-fit:contain}
+@media (max-width:639px){.get-app-float{left:16px;bottom:16px}}
+.stores-dialog{max-width:440px;border-radius:24px}
+.store-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.store-button{flex:1;min-width:170px;min-height:52px;display:flex;align-items:center;gap:12px;padding:8px 16px;border-radius:14px;background:#000;color:#fff;text-decoration:none}
+.store-button:hover{background:#1a1a1a}
+.store-button span{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+.store-button small{font-size:10px}
+.store-button strong{font-size:16px;font-weight:600}

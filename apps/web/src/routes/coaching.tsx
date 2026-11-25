@@ -5,6 +5,7 @@ import { PageHero } from '@/components/shared/page-hero';
 import { FounderBoxes } from '@/components/services/founder-boxes';
 import { CoachingPricing } from '@/components/services/coaching-pricing';
 import { Reveal } from '@/components/shared/reveal';
+import { StoresDialog, useGetTheApp } from '@/components/get-the-app';
 
 export function meta({ matches, location }: Route.MetaArgs) {
 	return seo({ matches, location }, {
@@ -16,6 +17,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
 
 export default function CoachingPage() {
 	const { tr } = useLang();
+	const app = useGetTheApp();
 	const programmeIncludes = [
 		tr('Photos et vidéos de chaque exercice', 'Photos and videos of each exercise'),
 		tr('Temps de repos et charges détaillés', 'Detailed rest times and loads'),
@@ -106,11 +108,12 @@ export default function CoachingPage() {
 						{programmeIncludes.map(item => <li key={item}>{item}</li>)}
 					</ul>
 					<div className="buttons">
-						<a className="button primary" href="https://gym-room.setmore.com/" target="_blank" rel="noreferrer">{tr('Réserver', 'Book')}</a>
+						<button type="button" className="button primary" onClick={app.trigger}>Get the app</button>
 						<a className="button glass" href="/contact">{tr('Contact', 'Contact')}</a>
 					</div>
 				</div>
 				</div>
+			<StoresDialog open={app.open} setOpen={app.setOpen} />
 			</section>
 			</Reveal>
 

@@ -14,6 +14,7 @@ import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { CookieBanner } from '@/components/cookie-banner';
 import { BackToTop } from '@/components/back-to-top';
+import { GetTheAppFloating } from '@/components/get-the-app';
 import { canonicalOrigin } from '@/lib/canonical-origin.server';
 import { normalizedPathname } from '@/lib/canonical-url';
 import { HorizonsPreviewScripts } from './horizons-preview-scripts';
@@ -140,6 +141,7 @@ export default function App() {
 			<SiteFooter />
 			<CookieBanner />
 			<BackToTop />
+			<GetTheAppFloating />
 		</LanguageProvider>
 	);
 }
