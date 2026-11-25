@@ -623,3 +623,8 @@ body.page-gym-lab .site-header .header-inner .lang-switch{background:rgba(255,25
 .form-error{margin:0;padding:10px 14px;border-radius:12px;background:#fdecec;color:#8a1c1c;font-size:14px}
 .form-error-link{background:none;border:0;padding:0;font:inherit;font-weight:700;color:inherit;text-decoration:underline;cursor:pointer}
 .form-submit[disabled]{opacity:.7;cursor:wait}
+
+/* --- Studio location card: same side margins as the other cards --- */
+.rail.studio-location{width:auto;max-width:1260px;padding:40px}
+@media (max-width:1340px){.rail.studio-location{margin-left:40px;margin-right:40px}}
+@media (max-width:639px){.rail.studio-location{margin-left:24px;margin-right:24px;padding:28px 24px;border-radius:28px}}
