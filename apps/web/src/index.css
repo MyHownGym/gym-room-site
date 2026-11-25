@@ -628,3 +628,16 @@ body.page-gym-lab .site-header .header-inner .lang-switch{background:rgba(255,25
 .rail.studio-location{width:auto;max-width:1260px;padding:40px}
 @media (max-width:1340px){.rail.studio-location{margin-left:40px;margin-right:40px}}
 @media (max-width:639px){.rail.studio-location{margin-left:24px;margin-right:24px;padding:28px 24px;border-radius:28px}}
+
+/* --- Home contact panels: same side margins as the other cards --- */
+@media (max-width:1340px){.rail.contact-section{padding-left:40px !important;padding-right:40px !important}}
+@media (max-width:639px){.rail.contact-section{padding-left:24px !important;padding-right:24px !important}}
+.contact-section>.booking-panel,.contact-section>.contact-panel{width:100%;box-sizing:border-box}
+
+/* --- Tablet alignment: Location coach CTA band and Coaching programme --- */
+@media (max-width:1340px){
+ .rail.page-section.cta-band{width:auto !important;margin-left:40px !important;margin-right:40px !important}
+}
+@media (max-width:639px){
+ .rail.page-section.cta-band{margin-left:24px !important;margin-right:24px !important}
+}
