@@ -641,3 +641,4 @@ body.page-gym-lab .site-header .header-inner .lang-switch{background:rgba(255,25
 @media (max-width:639px){
  .rail.page-section.cta-band{margin-left:24px !important;margin-right:24px !important}
 }
+.theme-orange .pricing-card.featured li:before,.pricing-card.featured li:before,.offer-card.featured li:before{background:none !important}
