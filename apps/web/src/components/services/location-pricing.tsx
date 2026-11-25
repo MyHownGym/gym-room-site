@@ -65,7 +65,7 @@ export function LocationPricing() {
 							<h3>{plan.name[lang]}</h3>
 							<p className="offer-price">
 								<span>{formatChf(plan.perSession)}</span>
-								<small>/ {tr('séance', 'session')}</small>
+								<small>/ {tr('séance de 1h', '1-hour session')}</small>
 							</p>
 							<p className="offer-save">{tr('Économisez', 'Save')} {pct} %</p>
 							<p className="offer-upfront">
@@ -77,7 +77,7 @@ export function LocationPricing() {
 							<p className="offer-blurb">{plan.blurb[lang]}</p>
 							<ul>
 								<li>
-									{plan.sessions} {tr('séances de coaching d’une valeur de CHF', 'coaching sessions valued at CHF')} {BASE_PER_SESSION}.– {tr('chacune', 'each')}
+									{plan.sessions} {tr('séances de coaching de 1h d’une valeur de CHF', 'one-hour coaching sessions valued at CHF')} {BASE_PER_SESSION}.– {tr('chacune', 'each')}
 								</li>
 								<li>{tr('Accès studio privé', 'Private studio access')}</li>
 								<li>{tr('Matériel à disposition', 'Equipment available')}</li>

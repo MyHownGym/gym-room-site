@@ -246,7 +246,7 @@ export function CoachingPricing() {
 									<p className="offer-blurb">{(duo ? plan.duoBlurb : plan.blurb)[lang]}</p>
 									<ul>
 										<li>
-											{totalSessions} {tr('séances de coaching d’une valeur de', 'coaching sessions valued at')} {formatChf(sessionValue)} {tr('chacune (rabais de', 'each (saving of')} {formatChf(saving)})
+											{totalSessions} {tr('séances de coaching de 1h d’une valeur de', 'one-hour coaching sessions valued at')} {formatChf(sessionValue)} {tr('chacune (rabais de', 'each (saving of')} {formatChf(saving)})
 										</li>
 										<li>{tr('Accès gratuit à l’application Ekklo', 'Free access to the Ekklo app')}</li>
 										<li>{tr('Suivi Whatsapp sous', 'WhatsApp follow-up within')} {plan.whatsapp}</li>
@@ -273,7 +273,7 @@ export function CoachingPricing() {
 										<h3>{(duo ? plan.duoName : plan.name)[lang]}</h3>
 										<p className="offer-price">
 											<span>{formatChf(perSession)}</span>
-											<small>/ {tr('séance', 'session')}</small>
+											<small>/ {tr('séance de 1h', '1-hour session')}</small>
 										</p>
 										<p className="offer-save">{tr('Économisez', 'Save')} {duo ? plan.duoSave : plan.save}</p>
 										<p className="offer-upfront">
@@ -285,7 +285,7 @@ export function CoachingPricing() {
 										<p className="offer-blurb">{(duo ? plan.duoBlurb : plan.blurb)[lang]}</p>
 										<ul>
 											<li>
-												{plan.sessions} {tr('séances de coaching d’une valeur de', 'coaching sessions valued at')} {formatChf(sessionValue)} {tr('chacune', 'each')}
+												{plan.sessions} {tr('séances de coaching de 1h d’une valeur de', 'one-hour coaching sessions valued at')} {formatChf(sessionValue)} {tr('chacune', 'each')}
 											</li>
 											<li>{tr('Accès gratuit à l’application Ekklo', 'Free access to the Ekklo app')}</li>
 											<li>{tr('Programme personnalisé', 'Personalised programme')}</li>
